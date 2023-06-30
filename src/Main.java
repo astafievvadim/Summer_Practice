@@ -1,18 +1,24 @@
-import FileInput.FileInput;
+import fileInput.FileInput;
+import readingSession.FullReadingSession;
+import readingSession.SingleReadingSession;
 
 import java.io.*;
-import java.util.Scanner;
 
 public class Main {
 
-
+    // ignore first 12 lines!!!!!
     public static void main(String[] args) throws FileNotFoundException {
-        int ignoredLines = 12;
-        FileInput input = new FileInput("Moscow");
-        int number = 1 + ignoredLines;
-        String a = input.getOutputFromLine(number);
 
-        System.out.println(a);
+        FileInput input = new FileInput("Moscow");
+
+        FullReadingSession FULL = new FullReadingSession(input);
+
+        SingleReadingSession SINGLE;
+
+        for(int i = 0; i < input.getCounter(); i++){
+            SINGLE = FULL.getSingleSession(i);
+            System.out.println(SINGLE);
+        }
     }
 }
 
