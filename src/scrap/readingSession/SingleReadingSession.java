@@ -1,4 +1,4 @@
-package readingSession;
+package scrap.readingSession;
 
 
     /*пример строчки спутника
@@ -54,6 +54,7 @@ public class SingleReadingSession {
         this.Distance = Double.parseDouble(beautifulArray[7]);
         this.SphericalAzimuth = Double.parseDouble(beautifulArray[8]);
         this.SphericalElevation = Double.parseDouble(beautifulArray[9]);
+
     }
 
     @Override

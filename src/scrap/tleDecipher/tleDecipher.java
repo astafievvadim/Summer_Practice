@@ -1,4 +1,4 @@
-package tleDecipher;
+package scrap.tleDecipher;
 
 public class tleDecipher {
 

@@ -1,8 +1,7 @@
-package readingSession;
+package scrap.readingSession;
 
-import fileInput.FileInput;
+import scrap.fileInput.FileInput;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,8 +23,8 @@ public class FullReadingSession {
     }
 
     private void initializeFromFileInput(FileInput fileInput) {
-        for (int i = 0; i < fileInput.getCounter(); i++) {
-            String line = fileInput.getOutputFromLine(i);
+        for (int i = 0; i < fileInput.getLength(); i++) {
+            String line = fileInput.getSingleLine(i);
             if (!(line.isEmpty() || line.trim().equals("") || line.trim().equals("\n"))) {
                 addReadingSession(new SingleReadingSession(line));
             }
