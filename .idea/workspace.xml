@@ -5,34 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfb91129-bf2a-4c14-97fe-8b90575abe15" name="Changes" comment="Clearing unused x2">
-      <change beforePath="$PROJECT_DIR$/src/main/java/javaFX/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFX/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logicPackage/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logicPackage/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logicPackage/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logicPackage/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logicPackage/ResultString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pointOfInterest/PointOfInterest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pointOfInterest/PointOfInterest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shoot/Shoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shoot/Shoot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/visibilityWindow/VisibilityWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visibilityWindow/VisibilityWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fileInput/BasicInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fileInput/BasicInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javaFX/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javaFX/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javaFX/StartApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javaFX/StartApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logicPackage/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logicPackage/Data.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logicPackage/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logicPackage/Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logicPackage/ResultString.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logicPackage/ResultString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logicPackage/SimpleLogicFirstVersion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logicPackage/SimpleLogicFirstVersion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pointOfInterest/PointOfInterest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pointOfInterest/PointOfInterest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/satellite/Satellite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/satellite/Satellite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scrap/fileInput/FileInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scrap/fileInput/FileInput_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scrap/fileInput/InputPoints.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scrap/points/Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scrap/readingSession/SingleReadingSession.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scrap/tleDecipher/Example.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scrap/tleDecipher/tleDecipher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shoot/Shoot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shoot/Shoot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/station/Station.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/station/Station.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/time/TimeWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/time/TimeWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/visibilityWindow/VisibilityWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/visibilityWindow/VisibilityWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
