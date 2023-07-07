@@ -1,6 +1,5 @@
 package javaFX;
 
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -10,12 +9,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import logicPackage.Data;
 import logicPackage.Result;
-import logicPackage.ResultString;
 import logicPackage.SimpleLogicFirstVersion;
-import pointOfInterest.PointOfInterest;
-import satellite.Satellite;
-import station.Station;
-import time.TimeWindow;
 
 import java.text.ParseException;
 

@@ -38,7 +38,6 @@ public class Result {
                 this.time = timeInterval;
                 this.value = accumulatedData;
         }
-        // @TODO result.getTime needs rework;
         public double getTime(){
                 return time;
         }

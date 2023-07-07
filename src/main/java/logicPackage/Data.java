@@ -13,19 +13,6 @@ import java.util.List;
 public class Data {
 
     private List<PointOfInterest> points;
-
-    public void setSatellites(List<Satellite> satellites) {
-        this.satellites = satellites;
-    }
-
-    public void setShoots(List<Shoot> shoots) {
-        this.shoots = shoots;
-    }
-
-    public void setWindows(List<VisibilityWindow> windows) {
-        this.windows = windows;
-    }
-
     private List<Satellite> satellites;
     private List<Shoot> shoots;
     private List<VisibilityWindow> windows;
@@ -82,9 +69,6 @@ public class Data {
 
     }
 
-    public void addPoint(PointOfInterest point){
-        points.add(point);
-    }
 
     public Data() throws ParseException {
         points = new ArrayList<>();
@@ -121,7 +105,4 @@ public class Data {
 
     }
 
-    public List<PointOfInterest> getPoints() {
-        return points;
-    }
 }

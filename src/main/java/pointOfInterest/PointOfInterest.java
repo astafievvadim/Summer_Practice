@@ -2,8 +2,6 @@ package pointOfInterest;
 
 import fileInput.BasicInput;
 
-import java.sql.Array;
-import java.util.Scanner;
 
 public class PointOfInterest {
 
@@ -43,20 +41,5 @@ public class PointOfInterest {
     }
 
 
-    public int getId() {
-        return id;
-    }
-
-    public String getLabel() {
-        return label;
-    }
-
-    public double getLatitude() {
-        return latitude;
-    }
-
-    public double getLongitude() {
-        return longitude;
-    }
 
 }

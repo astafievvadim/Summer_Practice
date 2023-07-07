@@ -28,9 +28,7 @@ public class Shoot {
 
         id = Integer.parseInt(aboba[3].replace(",", ""));
         satellite = new Satellite(( aboba[5] + " " + aboba[6]).replace("\"", "").replace(",", ""));
-
         point = new PointOfInterest((aboba[8].replace(",", "").replace("\"", "")));
-        System.out.println(point);
         timeWindow = new TimeWindow(
                 aboba[10].replace("\"", "") + " " + aboba[11].replace(" \", ", ""),
                 aboba[13].replace("\"", "") + " " + aboba[14].replace(" \", ", "")

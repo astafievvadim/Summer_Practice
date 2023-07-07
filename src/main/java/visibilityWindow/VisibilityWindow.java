@@ -59,18 +59,9 @@ public class VisibilityWindow {
         return station;
     }
 
-    public TimeWindow getTimeWindow() {
-        return timeWindow;
-    }
-
     private void calculateCapacity(){
         this.receivingCapacity = speed*timeWindow.getTimeInterval();
-//#TODO cleanup this \/
-        /*
-        System.out.println(timeWindow);
-        System.out.println(Double.toString(speed) + " * " + Double.toString(timeWindow.getTimeInterval()) + " = " + receivingCapacity);
 
-         */
     }
 
     public double getReceivingCapacity(){
