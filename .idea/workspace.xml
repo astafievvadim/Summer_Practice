@@ -4,11 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfb91129-bf2a-4c14-97fe-8b90575abe15" name="Changes" comment="Clearing unused x2">
+    <list default="true" id="dfb91129-bf2a-4c14-97fe-8b90575abe15" name="Changes" comment="New tasks:">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_15_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_15_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_15_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_all_2_4_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_util_6_1_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/logicPackage/TimeComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fileInput/BasicInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fileInput/BasicInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaFX/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFX/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javaFX/StartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javaFX/StartApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logicPackage/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logicPackage/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logicPackage/SimpleLogicFirstVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logicPackage/SimpleLogicFirstVersion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pointOfInterest/PointOfInterest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pointOfInterest/PointOfInterest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shoot/Shoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shoot/Shoot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/station/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/station/Station.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/time/TimeWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/time/TimeWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/visibilityWindow/VisibilityWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visibilityWindow/VisibilityWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/screens/MainScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/screens/MainScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fileInput/BasicInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fileInput/BasicInput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/javaFX/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/javaFX/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logicPackage/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logicPackage/Data.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logicPackage/SimpleLogicFirstVersion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logicPackage/SimpleLogicFirstVersion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pointOfInterest/PointOfInterest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pointOfInterest/PointOfInterest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/shoot/Shoot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shoot/Shoot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/station/Station.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/station/Station.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/time/TimeWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/time/TimeWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/visibilityWindow/VisibilityWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/visibilityWindow/VisibilityWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688700142108</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="New tasks:">
+      <created>1688723170040</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688723170040</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,7 +155,8 @@
     <MESSAGE value="Day 0.1:&#10;Somewhat working file-input;" />
     <MESSAGE value="Clearing unused" />
     <MESSAGE value="Clearing unused x2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clearing unused x2" />
+    <MESSAGE value="New tasks:" />
+    <option name="LAST_COMMIT_MESSAGE" value="New tasks:" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

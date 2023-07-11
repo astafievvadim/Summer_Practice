@@ -1,16 +1,17 @@
 package javaFX;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import logicPackage.Data;
 import logicPackage.Result;
 import logicPackage.SimpleLogicFirstVersion;
 
+import java.io.FileNotFoundException;
 import java.text.ParseException;
 
 public class MainController {
@@ -23,27 +24,30 @@ public class MainController {
     public TableColumn<Result, String> timeWindow = new TableColumn<>("timeWindow");
     public TableColumn<Result, String> time = new TableColumn<>("time");
     public TableColumn<Result, String> value = new TableColumn<>("value");
+    public CheckBox NoCollisions;
 
     @FXML
     public void initialize() {
         initializeTableView();
 
     }
-    public void StartButtonPressed(ActionEvent event) throws ParseException {
+    public void StartButtonPressed(ActionEvent event) throws ParseException, JsonProcessingException, FileNotFoundException {
 
         Data data = new Data();
         SimpleLogicFirstVersion da = new SimpleLogicFirstVersion(data);
-        ObservableList<Result> temp = da.getResult();
+        if(NoCollisions.isSelected()) {
+            da.clearForStation();
+        }
 
+        ObservableList<Result> temp = da.getResult();
+        table.setItems(temp);
         timeSet.setText(Double.toString(da.getWastedTime()));
         valueSet.setText(Double.toString(da.getReceivedValue()));
-
-        table.setItems(temp);
-
 
     }
 
     private void initializeTableView(){
+
         value.setCellValueFactory(new PropertyValueFactory<Result, String>("value"));
         time.setCellValueFactory(new PropertyValueFactory<Result, String>("time"));
         timeWindow.setCellValueFactory(new PropertyValueFactory<Result, String>("timeWindow"));

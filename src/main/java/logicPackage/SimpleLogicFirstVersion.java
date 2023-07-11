@@ -6,13 +6,16 @@ import satellite.Satellite;
 import shoot.Shoot;
 import visibilityWindow.VisibilityWindow;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.Date;
+import java.util.List;
 
 public class SimpleLogicFirstVersion {
 
     private Data data;
 
     private double receivedValue;
+    private boolean shouldClear;
 
     public double getReceivedValue() {
         return receivedValue;
@@ -45,15 +48,18 @@ public class SimpleLogicFirstVersion {
     }
 
     private void calculateValue(){
+        receivedValue = 0;
         for(int i = 0; i < results.size(); i++) {
             receivedValue += results.get(i).getValue();
         }
     }
 
     private void calculateTime(){
+        wastedTime = 0;
         for(int i = 0; i < results.size(); i++) {
             wastedTime += results.get(i).getTime();
         }
+        wastedTime = (int)wastedTime/3600;
     }
 
     public void printResults(){
@@ -64,6 +70,74 @@ public class SimpleLogicFirstVersion {
         System.out.println(receivedValue + " - value");
 
         System.out.println(wastedTime + " - time");
+    }
+
+    public void clearForStation() {
+
+        List<Result> temp = results;
+        Collections.sort(temp, new TimeComparator());
+        Result mustBeRemoved;
+        for (int i = 1; i < temp.size() - 1; i++) {
+            if ((isOverlapping(
+                    temp,
+                    i,
+                    i - 1
+            ))) {
+
+                if (temp.get(i).getValue() == lowestValue(
+                        temp.get(i).getValue(),
+                        temp.get(i - 1).getValue()
+                )) {
+                    mustBeRemoved = temp.get(i);
+
+
+                } else {
+                    mustBeRemoved = temp.get(i - 1);
+                }
+                temp.remove(mustBeRemoved);
+            }
+                if ((isOverlapping(
+                        temp,
+                        i,
+                        i + 1
+                ))) {
+                    if (temp.get(i).getValue() == lowestValue(
+                            temp.get(i).getValue(),
+                            temp.get(i + 1).getValue()
+                    )) {
+                        mustBeRemoved = temp.get(i);
+
+
+
+                    } else {
+                        mustBeRemoved = temp.get(i + 1);
+
+                    }
+                    temp.remove(mustBeRemoved);
+                }
+            }
+
+        calculateTime();
+        calculateValue();
+
+        }
+
+
+    private boolean isOverlapping(List<Result> temp, int i, int iNext) {
+        Date startFirst = temp.get(i).getTimeWindow().getStart();
+        Date endFirst = temp.get(i).getTimeWindow().getEnd();
+
+        Date startSecond = temp.get(iNext).getTimeWindow().getStart();
+        Date endSecond = temp.get(iNext).getTimeWindow().getEnd();
+
+        return !startFirst.after(endSecond) && !startSecond.after(endFirst);
+    }
+
+
+
+    private double lowestValue(double valueA, double valueB){
+        double lValue = Math.min(valueA, valueB);
+        return lValue;
     }
 
     private boolean shouldShoot(double accumulatedData, int newData, double closestStCapacity){

@@ -5,7 +5,6 @@ import satellite.Satellite;
 import station.Station;
 import time.TimeWindow;
 
-import java.sql.Time;
 import java.text.ParseException;
 
 public class VisibilityWindow {

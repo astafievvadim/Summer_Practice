@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+
 public class BasicInput {
 
     private String stationName;
@@ -16,7 +17,7 @@ public class BasicInput {
         return input.size();
     }
 
-    public BasicInput(String fileName){
+    public BasicInput(String fileName) throws FileNotFoundException {
         input = new ArrayList<String>();
         chooseType(fileName);
 
@@ -73,19 +74,18 @@ public class BasicInput {
 
     private void reformatForShoot() {
 
-
-
         List<String> temp = new ArrayList<>();
-        String tempString = " ";
-        int x = input.size();
-        for(int j = 7; j<x; j = j+8){
 
-            tempString = input.get(j-6) + input.get(j-5) + input.get(j-4) + input.get(j-3) + input.get(j-2) + input.get(j-1) + input.get(j);
+        String tempString = "";
+        int x = input.size();
+        for(int j = 7; j<x; j = j+8) {
+            tempString = input.get(j-6)  + "\n" + input.get(j-5) + "\n" + input.get(j-4)+ "\n"  + input.get(j-3)+ "\n" + input.get(j-2) + "\n" + input.get(j-1)+ "\n"  + input.get(j)+ "\n"  + input.get(j+1).replace(",", "");;
+
             temp.add(tempString);
         }
 
         this.input = temp;
-
+        System.out.println(input.get(0));
     }
 
 

@@ -27,11 +27,11 @@ public class PointOfInterest {
 
 
     private void workingWithInput(BasicInput input, int number){
-        String[] aboba = input.getLine(number).split("\\s+");
-        id = Integer.parseInt(aboba[2].replace(",", ""));
-        label = aboba[4].replace(",", "");
-        latitude = Double.parseDouble(aboba[6].replace(",", ""));
-        longitude = Double.parseDouble(aboba[8]);
+        String[] temp = input.getLine(number).split("\\s+");
+        id = Integer.parseInt(temp[2].replace(",", ""));
+        label = temp[4].replace(",", "");
+        latitude = Double.parseDouble(temp[6].replace(",", ""));
+        longitude = Double.parseDouble(temp[8]);
 
     }
 

@@ -2,13 +2,14 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFX.MainController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFX.MainController">
    <top>
       <BorderPane prefHeight="43.0" prefWidth="600.0" style="-fx-background-color: #397249;" BorderPane.alignment="CENTER">
          <opaqueInsets>
@@ -16,91 +17,124 @@
          </opaqueInsets>
       </BorderPane>
    </top>
-   <left>
-      <BorderPane prefHeight="357.0" prefWidth="108.0" style="-fx-background-color: #628B61;" BorderPane.alignment="CENTER">
-         <top>
-            <Button mnemonicParsing="false" onAction="#StartButtonPressed" prefHeight="35.0" prefWidth="70.0" style="-fx-background-color: #C7E1BA;" text="Start" textFill="#397249" BorderPane.alignment="CENTER">
-               <BorderPane.margin>
-                  <Insets bottom="20.0" left="15.0" right="15.0" top="20.0" />
-               </BorderPane.margin>
-               <padding>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </padding>
-               <font>
-                  <Font name="MS Reference Sans Serif" size="14.0" />
-               </font>
-            </Button>
-         </top>
-      </BorderPane>
-   </left>
    <center>
       <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <bottom>
-            <BorderPane prefHeight="83.0" prefWidth="492.0" style="-fx-background-color: #628B61;" BorderPane.alignment="CENTER">
+            <BorderPane prefHeight="106.0" prefWidth="600.0" style="-fx-background-color: #628B61;" BorderPane.alignment="CENTER">
                <right>
-                  <BorderPane prefHeight="110.0" prefWidth="248.0" BorderPane.alignment="CENTER">
-                     <top>
-                        <Label fx:id="timeSet" textFill="#c7e1ba" BorderPane.alignment="CENTER">
-                           <graphic>
-                              <Label text="Total time:" textFill="#c7e1ba">
-                                 <padding>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                 </padding>
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font>
-                              </Label>
-                           </graphic>
-                           <BorderPane.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </BorderPane.margin>
-                           <padding>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </padding>
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </Label>
-                     </top>
-                     <bottom>
-                        <Label fx:id="valueSet" textFill="#c7e1ba" BorderPane.alignment="CENTER">
-                           <graphic>
-                              <Label text="Total value:" textFill="#c7e1ba">
-                                 <padding>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                 </padding>
-                                 <font>
-                                    <Font size="20.0" />
-                                 </font>
-                              </Label>
-                           </graphic>
-                           <BorderPane.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" />
-                           </BorderPane.margin>
-                           <padding>
-                              <Insets bottom="5.0" left="5.0" right="20.0" top="5.0" />
-                           </padding>
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </Label>
-                     </bottom>
+                  <BorderPane prefHeight="107.0" prefWidth="471.0" BorderPane.alignment="CENTER">
                      <BorderPane.margin>
                         <Insets />
                      </BorderPane.margin>
+                     <left>
+                        <Label prefHeight="50.0" prefWidth="203.0" text="Hours" textFill="#c7e1ba" BorderPane.alignment="CENTER">
+                           <graphic>
+                              <Label fx:id="timeSet" text="0" textFill="#c7e1ba">
+                                 <graphic>
+                                    <Label prefHeight="35.0" prefWidth="92.0" text="Total time:" textFill="#c7e1ba">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </graphic>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <BorderPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label text="GB" textFill="#c7e1ba" BorderPane.alignment="CENTER">
+                           <graphic>
+                              <Label fx:id="valueSet" text="0" textFill="#c7e1ba">
+                                 <graphic>
+                                    <Label text="Total value:" textFill="#c7e1ba">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </graphic>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <BorderPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="15.0" top="5.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
                   </BorderPane>
                </right>
+               <left>
+                  <Button mnemonicParsing="false" onAction="#StartButtonPressed" prefHeight="66.0" prefWidth="85.0" style="-fx-background-color: #C7E1BA;" text="Start" textFill="#397249" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="20.0" left="15.0" right="15.0" top="20.0" />
+                     </BorderPane.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="MS Reference Sans Serif" size="14.0" />
+                     </font>
+                  </Button>
+               </left>
+               <center>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <center>
+                        <CheckBox fx:id="NoCollisions" allowIndeterminate="true" lineSpacing="1.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="174.0" selected="true" text="NoCollisions" textAlignment="RIGHT" textFill="#c7e1ba" textOverrun="WORD_ELLIPSIS" wrapText="true" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </BorderPane.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
+                           </padding>
+                        </CheckBox>
+                     </center>
+                  </BorderPane>
+               </center>
             </BorderPane>
          </bottom>
          <center>
-            <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <TableView fx:id="table" prefHeight="264.0" prefWidth="600.0" BorderPane.alignment="CENTER">
               <columns>
-                <TableColumn fx:id="satellite" editable="false" prefWidth="75.0" text="Satellite" />
-                <TableColumn fx:id="station" editable="false" prefWidth="75.0" text="Station" />
-                  <TableColumn fx:id="point" editable="false" prefWidth="75.0" text="Point" />
-                  <TableColumn fx:id="timeWindow" editable="false" prefWidth="91.0" text="Time Window" />
-                  <TableColumn fx:id="time" editable="false" prefWidth="91.0" text="Time" />
-                  <TableColumn fx:id="value" editable="false" prefWidth="81.0" text="Value" />
+                <TableColumn fx:id="satellite" editable="false" prefWidth="60.0" text="Satellite" />
+                <TableColumn fx:id="station" editable="false" prefWidth="60.0" text="Station" />
+                  <TableColumn fx:id="point" editable="false" prefWidth="6.0" text="Point" />
+                  <TableColumn fx:id="timeWindow" editable="false" prefWidth="150.0" text="Time Window" />
+                  <TableColumn fx:id="time" editable="false" prefWidth="6.0" text="Time" />
+                  <TableColumn fx:id="value" editable="false" prefWidth="6.0" text="Value" />
               </columns>
                <columnResizePolicy>
                   <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

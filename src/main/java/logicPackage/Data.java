@@ -1,11 +1,13 @@
 package logicPackage;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import fileInput.BasicInput;
 import pointOfInterest.PointOfInterest;
 import satellite.Satellite;
 import shoot.Shoot;
 import visibilityWindow.VisibilityWindow;
 
+import java.io.FileNotFoundException;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,14 +19,14 @@ public class Data {
     private List<Shoot> shoots;
     private List<VisibilityWindow> windows;
 
-    private void fillFromIput() throws ParseException {
+    private void fillFromIput() throws ParseException, JsonProcessingException, FileNotFoundException {
         fillSatellites();
         fillWindows();
         fillShoots();
         fillPoints();
     }
 
-    private void fillWindows() throws ParseException {
+    private void fillWindows() throws ParseException, FileNotFoundException {
 
         BasicInput input = new BasicInput("Moscow.txt");
 
@@ -46,10 +48,8 @@ public class Data {
 
     }
 
-    private void fillShoots() throws ParseException {
+    private void fillShoots() throws ParseException, JsonProcessingException, FileNotFoundException {
         BasicInput input = new BasicInput("shoot.json");
-
-
         for(int i = 0; i < input.getSize(); i++){
 
             shoots.add(new Shoot(input, i));
@@ -58,7 +58,7 @@ public class Data {
 
     private void fillSatellites(){}
 
-    private void fillPoints(){
+    private void fillPoints() throws FileNotFoundException {
         BasicInput input = new BasicInput("points.json");
         List<PointOfInterest> points = new ArrayList<>();
         for(int i = 0; i < input.getSize(); i++){
@@ -70,7 +70,7 @@ public class Data {
     }
 
 
-    public Data() throws ParseException {
+    public Data() throws ParseException, JsonProcessingException, FileNotFoundException {
         points = new ArrayList<>();
         satellites = new ArrayList<>();
         shoots = new ArrayList<>();

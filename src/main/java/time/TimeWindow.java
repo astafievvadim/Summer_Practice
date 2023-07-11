@@ -1,10 +1,8 @@
 package time;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.TimeZone;
 
 public class TimeWindow {
 
@@ -14,6 +12,15 @@ public class TimeWindow {
     private Date end;
 
     private double timeIntervalInSeconds;
+
+    public TimeWindow(Date startString, Date endString) throws ParseException {
+
+        start = startString;
+        end = endString;
+
+        timeIntervalInSeconds = Math.abs(end.getTime()-start.getTime())/1000;
+    }
+
 
     public TimeWindow(String startString, String endString) throws ParseException {
 
